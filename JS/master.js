@@ -162,6 +162,17 @@ function randomImages() {
 }
 randomImages();
 /* End Overlay */
+/* Start Skills */
+let skills = document.querySelector(".our-skills");
+let progress = document.querySelectorAll(".our-skills .skills .skill .progress .inside-progress");
+window.onscroll = function () {
+    if (window.scrollY >= skills.offsetTop - 500) {
+        progress.forEach(div => {
+            div.style.width = div.dataset.width;
+        });
+    }
+}
+/* End Skills */
 /* Start Gallery */
 let galleryImg = document.querySelectorAll(".our-gallery .container .gallery img");
 /* To create the element when click on the image */

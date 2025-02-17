@@ -369,6 +369,7 @@ a {
     .about .container .text {
         text-align: center;
         width: 80%;
+        margin: 0;
     }
 }
 .about .container .text h2 {
@@ -432,13 +433,19 @@ a {
     left: 0;
     top: 0;
     height: 100%;
+    width: 0;
     background-color: var(--main-color);
     z-index: 5;
     border-radius: 7px 0 0 7px;
+    transition: 0.5s;
     -webkit-border-radius: 7px 0 0 7px;
     -moz-border-radius: 7px 0 0 7px;
     -ms-border-radius: 7px 0 0 7px;
     -o-border-radius: 7px 0 0 7px;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
 }
 /* End Skills */
 /* Start Gallery */

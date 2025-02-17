@@ -166,7 +166,7 @@ randomImages();
 let skills = document.querySelector(".our-skills");
 let progress = document.querySelectorAll(".our-skills .skills .skill .progress .inside-progress");
 window.onscroll = function () {
-    if (window.scrollY >= skills.offsetTop - 500) {
+    if (window.scrollY >= skills.offsetTop - 600) {
         progress.forEach(div => {
             div.style.width = div.dataset.width;
         });
